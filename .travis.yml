@@ -8,6 +8,6 @@ services:
 script:
 - docker build -t "$DOCKER_USERNAME"/nodejs-helloworld .
 
-deploy:
+after_success:
 - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
 - docker push "$DOCKER_USERNAME"/nodejs-helloworld
