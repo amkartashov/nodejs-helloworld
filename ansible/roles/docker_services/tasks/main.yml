@@ -1,0 +1,8 @@
+- name: helloworld docker container
+  docker_container:
+    name: helloworld
+    image: "{{ docker_user }}/nodejs-helloworld"
+    pull: yes
+    state: started
+    network_mode: host
+    published_ports: "8888"

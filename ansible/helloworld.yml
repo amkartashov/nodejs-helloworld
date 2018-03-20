@@ -1,0 +1,12 @@
+- hosts: dockerhosts
+  user: core
+  become: yes
+  become_method: sudo
+  vars_prompt:
+    prompt: docker_user?
+    name: docker_user
+    private: no
+  roles:
+  - role: docker_services
+
+
