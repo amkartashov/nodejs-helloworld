@@ -18,4 +18,4 @@ RUN apk add --allow-untrusted /glibc-2.27-r0.apk /glibc-bin-2.27-r0.apk && rm /g
 CMD ["/node-v8.11.1-linux-x64/bin/node", "/app/app.js"]
 
 # clean up all PATH
-#RUN rm -rf /usr/local/bin /usr/local/sbin /usr/sbin /usr/bin /sbin /bin
+RUN rm -rf /usr/local/bin /usr/local/sbin /usr/sbin /usr/bin /sbin /bin
