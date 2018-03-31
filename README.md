@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/gorilych/nodejs-helloworld.svg?branch=master)](https://travis-ci.org/gorilych/nodejs-helloworld)
+
 Simple Hello World NodeJS web application
 =========================================
 
